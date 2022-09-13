@@ -1,6 +1,6 @@
 # Share.io 
 Share.io is a File Transfering app that allows large file to be transfered easily over the internet.
-# Note 🚀
+## Note 🚀
 This App is under development Phase
 
 Work in progress 
