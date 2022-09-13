@@ -1,7 +1,7 @@
 from django import forms
 from .models import Files
 class UploadFileForm(forms.Form):
-    file = forms.FileField()
+    file = forms.FileField(label='subject')
 
     
     class Meta:
