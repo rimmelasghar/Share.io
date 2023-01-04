@@ -1,19 +1,25 @@
-# Share.io 
+# _Share.io 🚀_
+Code By Rimmel with ❤
+
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
+
 Share.io is a File Transfering app that allows large file to be transfered easily over the internet.
+
+## Installation
+```bash
+pip install -r requirements.txt
+```
 ## Note 🚀
 This App is under development Phase.
 
-Work in progress 
-``` bash
-pip install -r requirements.txt
-```
+## Test by Running
 ``` bash
 python manage.py runserver
 ```
 The website will be avalaible on 127.0.0:8000
 
-## App over view:
-![landingpage3](https://github.com/rimmelasghar/Share.io/blob/master/appoverview/share1.PNG)
+## Application-Preview:
+![landingpage3](https://github.com/rimmelasghar/Share.io/blob/master/appoverview/share1.png)
 
 
 ![landingpage4](https://github.com/rimmelasghar/Share.io/blob/master/appoverview/share3.png)
