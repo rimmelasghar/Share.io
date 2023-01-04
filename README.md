@@ -1,9 +1,8 @@
 # _Share.io 🚀_
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
+Share.io is a File Transfering app that allows large file to be transfered easily over the internet.
 Code By Rimmel with ❤
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)]()
-
-Share.io is a File Transfering app that allows large file to be transfered easily over the internet.
 
 ## Installation
 ```bash
