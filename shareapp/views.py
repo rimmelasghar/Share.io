@@ -5,6 +5,8 @@ from django.utils.crypto import get_random_string
 import mimetypes
 from django.http import HttpResponse
 import os
+import pyqrcode
+from PIL import Image, ImageTk
 
 # Create your views here.
 
@@ -15,10 +17,18 @@ def home(request):
             key = get_random_string(length=32)
             files = Files(key = key ,file = request.FILES['file'])
             files.save()
-            return render(request,'sucess.html',{'key':key})
+            url = request.build_absolute_uri()
+            s = f"{url}{key}"
+            print(s)
+            qr = pyqrcode.create(str(s))
+            BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+            fl_path = BASE_DIR+'/media/'+key+'.png'
+            fl = 'media/'+key+'.png'
+            qr.png(fl_path, scale=8)
+            return render(request,'sucess.html',{'key':key,'qr':fl_path,'pth':fl})
     else:
         form = UploadFileForm()
-    return render(request, 'base.html', {'form': form})
+    return render(request, 'transfer.html', {'form': form})
 
 def sucess(request):
     return render(request,'sucess.html')

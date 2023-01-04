@@ -1,0 +1,44 @@
+
+        body{
+            background-image: url(https://img.freepik.com/free-vector/abstract-shapes-background-with-leaves_23-2149093052.jpg?w=2000);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-position: 30% 70%;
+
+        }
+        .mainh{
+            color:black;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .Uploader{
+            width: 200px;
+            height: 400px;
+            margin: 10px;
+            padding: 10px;
+        }
+        .upperL img{
+            width: 60px;
+            height: auto;
+            float: left;
+        }
+        #ctrl{
+            display: none;
+        }
+        #Folder {
+        display: none;
+        }
+        .custom-file-upload {
+        border: none;
+        display: inline-block;
+        padding: 6px 1px;
+        cursor: pointer;
+        color: rgb(78, 78, 78);
+
+        }
+        .custom-file-upload p:hover{
+            color: rgb(0, 0, 0);
+            transition: 0.6s;
+
+        }
